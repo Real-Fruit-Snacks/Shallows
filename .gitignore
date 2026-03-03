@@ -1,0 +1,24 @@
+# Ignore everything
+*
+
+# Allow project structure
+!.gitignore
+!.gitattributes
+!.nojekyll
+!.github/
+!.github/**
+
+# Allow source files
+!index.html
+!sw.js
+!README.md
+
+# Allow directories
+!css/
+!css/**
+!js/
+!js/**
+!assets/
+!assets/**
+!docs/
+!docs/**

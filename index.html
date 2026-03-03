@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shallows</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1f4bb;</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="topbar" aria-label="Toolbar">
+    <div class="topbar__brand">
+      <svg class="topbar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="4 17 10 11 4 5"></polyline>
+        <line x1="12" y1="19" x2="20" y2="19"></line>
+      </svg>
+      <span class="topbar__name">Shallows</span>
+    </div>
+    <div class="topbar__controls">
+      <button id="btn-new" class="btn btn--primary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        New Terminal
+      </button>
+      <span id="instance-counter" class="topbar__counter">0 / 6</span>
+      <div class="topbar__sep"></div>
+      <button id="btn-layout" class="btn btn--ghost">
+        <svg id="layout-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        Grid
+      </button>
+      <div class="topbar__sep"></div>
+      <button id="btn-copy" class="btn btn--ghost" title="Copy screen (Ctrl+Shift+C)">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+        Copy
+      </button>
+      <button id="btn-paste" class="btn btn--ghost" title="Paste (Ctrl+Shift+V)">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg>
+        Paste
+      </button>
+    </div>
+    <div class="topbar__meta">
+      <span class="badge">Alpine Linux</span>
+      <span class="badge badge--subtle">10.0.0.0/24</span>
+    </div>
+  </nav>
+
+  <div id="tab-bar" class="tab-bar" role="tablist" aria-label="Terminal tabs"></div>
+
+  <div id="viewport" class="viewport">
+    <div class="empty-state">
+      <svg class="empty-state__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="4 17 10 11 4 5"></polyline>
+        <line x1="12" y1="19" x2="20" y2="19"></line>
+      </svg>
+      <h2 class="empty-state__title">No terminals running</h2>
+      <p class="empty-state__desc">Each terminal is a full Alpine Linux VM running locally in your browser via x86 emulation. VMs are networked and auto-configured.</p>
+      <button class="btn btn--primary empty-state__btn" id="btn-new-empty">
+        Launch your first terminal
+      </button>
+    </div>
+  </div>
+
+  <div id="toast-container" class="toast-container"></div>
+
+  <script src="js/libv86.js"></script>
+  <script src="js/virtual-network.js"></script>
+  <script src="js/terminal-manager.js"></script>
+  <script src="js/file-transfer.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
