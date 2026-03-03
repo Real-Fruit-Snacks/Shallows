@@ -89,7 +89,7 @@
         letter-spacing="5">BROWSER-NATIVE LINUX TERMINALS</text>
 
   <!-- Feature badges -->
-  <g transform="translate(52, 205)">
+  <g transform="translate(166, 205)">
     <!-- v86 wasm -->
     <rect x="0" y="0" width="100" height="28" rx="14" fill="#313244"/>
     <rect x="0" y="0" width="100" height="28" rx="14" fill="none" stroke="#45475a" stroke-width="0.5"/>
@@ -98,38 +98,24 @@
           font-size="11" fill="#cdd6f4">v86 wasm</text>
 
     <!-- alpine linux -->
-    <rect x="120" y="0" width="120" height="28" rx="14" fill="#313244"/>
-    <rect x="120" y="0" width="120" height="28" rx="14" fill="none" stroke="#45475a" stroke-width="0.5"/>
-    <circle cx="136" cy="14" r="4" fill="#89dceb"/>
-    <text x="148" y="18" font-family="'SF Mono','Fira Code','JetBrains Mono',Consolas,monospace"
+    <rect x="116" y="0" width="120" height="28" rx="14" fill="#313244"/>
+    <rect x="116" y="0" width="120" height="28" rx="14" fill="none" stroke="#45475a" stroke-width="0.5"/>
+    <circle cx="132" cy="14" r="4" fill="#89dceb"/>
+    <text x="144" y="18" font-family="'SF Mono','Fira Code','JetBrains Mono',Consolas,monospace"
           font-size="11" fill="#cdd6f4">alpine linux</text>
 
     <!-- virtual net -->
-    <rect x="260" y="0" width="115" height="28" rx="14" fill="#313244"/>
-    <rect x="260" y="0" width="115" height="28" rx="14" fill="none" stroke="#45475a" stroke-width="0.5"/>
-    <circle cx="276" cy="14" r="4" fill="#89b4fa"/>
-    <text x="288" y="18" font-family="'SF Mono','Fira Code','JetBrains Mono',Consolas,monospace"
+    <rect x="252" y="0" width="115" height="28" rx="14" fill="#313244"/>
+    <rect x="252" y="0" width="115" height="28" rx="14" fill="none" stroke="#45475a" stroke-width="0.5"/>
+    <circle cx="268" cy="14" r="4" fill="#89b4fa"/>
+    <text x="280" y="18" font-family="'SF Mono','Fira Code','JetBrains Mono',Consolas,monospace"
           font-size="11" fill="#cdd6f4">virtual net</text>
 
-    <!-- file transfer -->
-    <rect x="395" y="0" width="115" height="28" rx="14" fill="#313244"/>
-    <rect x="395" y="0" width="115" height="28" rx="14" fill="none" stroke="#45475a" stroke-width="0.5"/>
-    <circle cx="411" cy="14" r="4" fill="#b4befe"/>
-    <text x="423" y="18" font-family="'SF Mono','Fira Code','JetBrains Mono',Consolas,monospace"
-          font-size="11" fill="#cdd6f4">file transfer</text>
-
     <!-- offline -->
-    <rect x="530" y="0" width="85" height="28" rx="14" fill="#313244"/>
-    <rect x="530" y="0" width="85" height="28" rx="14" fill="none" stroke="#45475a" stroke-width="0.5"/>
-    <circle cx="546" cy="14" r="4" fill="#f9e2af"/>
-    <text x="558" y="18" font-family="'SF Mono','Fira Code','JetBrains Mono',Consolas,monospace"
+    <rect x="383" y="0" width="85" height="28" rx="14" fill="#313244"/>
+    <rect x="383" y="0" width="85" height="28" rx="14" fill="none" stroke="#45475a" stroke-width="0.5"/>
+    <circle cx="399" cy="14" r="4" fill="#f9e2af"/>
+    <text x="411" y="18" font-family="'SF Mono','Fira Code','JetBrains Mono',Consolas,monospace"
           font-size="11" fill="#cdd6f4">offline</text>
-
-    <!-- catppuccin -->
-    <rect x="635" y="0" width="110" height="28" rx="14" fill="#313244"/>
-    <rect x="635" y="0" width="110" height="28" rx="14" fill="none" stroke="#45475a" stroke-width="0.5"/>
-    <circle cx="651" cy="14" r="4" fill="#cba6f7"/>
-    <text x="663" y="18" font-family="'SF Mono','Fira Code','JetBrains Mono',Consolas,monospace"
-          font-size="11" fill="#cdd6f4">catppuccin</text>
   </g>
 </svg>
